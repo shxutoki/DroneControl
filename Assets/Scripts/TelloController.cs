@@ -41,7 +41,7 @@ public class TelloController : MonoBehaviour
         {
             byte[] data = client.Receive(ref telloAddress);
             string message = Encoding.UTF8.GetString(data);
-            text.text = message;
+
             Debug.Log("Received: " + message);
         }
     }
